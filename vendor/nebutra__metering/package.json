@@ -1,0 +1,33 @@
+{
+  "name": "@nebutra/metering",
+  "version": "0.1.2",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./clickhouse": {
+      "types": "./dist/providers/clickhouse.d.ts",
+      "import": "./dist/providers/clickhouse.js"
+    },
+    "./memory": {
+      "types": "./dist/providers/memory.d.ts",
+      "import": "./dist/providers/memory.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@clickhouse/client": "^1.12.0",
+    "@nebutra/logger": "file:../nebutra__logger",
+    "p-queue": "^9.3.0",
+    "zod": "^4.3.6"
+  },
+  "private": false
+}

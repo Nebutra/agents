@@ -1,0 +1,65 @@
+{
+  "name": "@nebutra/billing",
+  "version": "0.1.4",
+  "description": "Billing & Monetization infrastructure for Nebutra - Stripe integration, subscriptions, usage, credits",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./stripe": {
+      "import": "./dist/stripe/index.js",
+      "types": "./dist/stripe/index.d.ts"
+    },
+    "./polar": {
+      "import": "./dist/polar/index.js",
+      "types": "./dist/polar/index.d.ts"
+    },
+    "./subscriptions": {
+      "import": "./dist/subscriptions/index.js",
+      "types": "./dist/subscriptions/index.d.ts"
+    },
+    "./usage": {
+      "import": "./dist/usage/index.js",
+      "types": "./dist/usage/index.d.ts"
+    },
+    "./credits": {
+      "import": "./dist/credits/index.js",
+      "types": "./dist/credits/index.d.ts"
+    },
+    "./entitlements": {
+      "import": "./dist/entitlements/index.js",
+      "types": "./dist/entitlements/index.d.ts"
+    },
+    "./lemonsqueezy": {
+      "import": "./dist/lemonsqueezy/index.js",
+      "types": "./dist/lemonsqueezy/index.d.ts"
+    },
+    "./chinapay": {
+      "import": "./dist/chinapay/index.js",
+      "types": "./dist/chinapay/index.d.ts"
+    },
+    "./checkout": {
+      "import": "./dist/checkout/index.js",
+      "types": "./dist/checkout/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@lemonsqueezy/lemonsqueezy.js": "^4.0.0",
+    "@nebutra/contracts": "file:../nebutra__contracts",
+    "@nebutra/logger": "file:../nebutra__logger",
+    "@nebutra/metering": "file:../nebutra__metering",
+    "@polar-sh/sdk": "^0.46.7",
+    "date-fns": "^4.1.0",
+    "stripe": "^20.4.0",
+    "zod": "^4.3.6"
+  },
+  "private": false
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@nebutra/contracts",
+  "version": "0.1.2",
+  "description": "Canonical API/event/domain contracts for Nebutra superstarter",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./identity": {
+      "import": "./dist/identity.js",
+      "types": "./dist/identity.d.ts"
+    },
+    "./billing": {
+      "import": "./dist/billing.js",
+      "types": "./dist/billing.d.ts"
+    },
+    "./events": {
+      "import": "./dist/events.js",
+      "types": "./dist/events.d.ts"
+    },
+    "./notifications": {
+      "import": "./dist/notifications.js",
+      "types": "./dist/notifications.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "private": false
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@nebutra/cache",
+  "version": "0.0.3",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./ioredis": {
+      "types": "./dist/ioredis.d.ts",
+      "import": "./dist/ioredis.js",
+      "default": "./dist/ioredis.js"
+    },
+    "./upstash": {
+      "types": "./dist/upstash.d.ts",
+      "import": "./dist/upstash.js",
+      "default": "./dist/upstash.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@nebutra/logger": "file:../nebutra__logger",
+    "@upstash/redis": "^1.36.3",
+    "bloom-filters": "^3.0.4",
+    "ioredis": "^5.4.2",
+    "p-retry": "^8.0.0"
+  },
+  "private": false
+}
